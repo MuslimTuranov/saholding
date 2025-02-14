@@ -199,14 +199,29 @@ ul ul {
 }
 
 /* === Стили карточек контактов === */
+.contact-container {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
 .contact-card {
-    border: 2px solid #e67e22;
+    border: 2px solid #e67e22 !important;
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     margin: 15px 0;
     background: #fff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px
 }
 
 .no-wrap {
@@ -243,6 +258,13 @@ footer {
 
     #intro h2 {
         font-size: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-card {
+        max-width: 100%;
     }
 
     section {
